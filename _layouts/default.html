@@ -37,7 +37,15 @@
         </section>
 
         <aside id="sidebar">
-            abcdffghkhlgarjkjlf
+            {% for ref in page_refs %}
+            {% assign my_page = site.pages | where: "ref", ref | first %}
+            {% if my_page.title %}
+            {% if my_page.title contains "404" %}
+            {% else %}
+            <a class="page-link" href="{{ my_page.url | absolute_url }}">{{ my_page.header-title | escape }}</a>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>

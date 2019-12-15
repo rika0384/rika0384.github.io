@@ -3,5 +3,7 @@ plugins:
   - jemoji
 exclude:
   - README.md
-title: [The title of your site]
+title: rika's page
 description: [A short description of your site's purpose]
+# url definitions
+header_page_refs: ['about', 'slides']
