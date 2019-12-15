@@ -35,7 +35,7 @@
         <section id="main-content">
           {{ content }}
         </section>
-
+        {% assign page_refs = site.header_page_refs | default: default_refs %}
         <aside id="sidebar">
             {% for ref in page_refs %}
             {% assign my_page = site.pages | where: "ref", ref | first %}
