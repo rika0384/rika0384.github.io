@@ -1,0 +1,5 @@
+theme: jekyll-theme-architect
+plugins:
+  - jemoji
+exclude:
+  - README.md
