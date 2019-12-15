@@ -1,5 +1,4 @@
-# rika0384's pages
-## コンテンツ
+# コンテンツ
 - about
 - slide
 - links
